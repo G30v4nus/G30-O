@@ -1,35 +1,18 @@
-esboço.js
-1
-função setup () { 
-2
-  criarCanvas ( 600 , 600 );
-3
-   fundo ( "branco" );
-4
+function setup() 
+  createCanvas(600, 600);
+   background("white");
 }
-5
-​
-6
-​
-7
-função  draw () {
-8
+
+
+function draw() {
   
-9
-  AVC ( "azul" );
-10
-  preencher ( "vermelho" );
-11
+  stroke ("blue");
+  fill ("red");
  
-12
   
-13
   // console.log(mouseIsPressed);
-14
   
-15
-  se ( mouseIsPressed ) {
-16
-    retângulo ( mouseX , mouseY , 20 , 35 );
-17
-  
+  if (mouseIsPressed){
+    rect(mouseX, mouseY, 20, 35);
+  }
+}
